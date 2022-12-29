@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gorrilla.bas</title>
+    <style>
+      /* Estilos para el tablero y los elementos gráficos del juego */
+      #gameBoard {
+        border: 1px solid black;
+      }
+      .building {
+        background-color: grey;
+      }
+      .cannon {
+        background-color: black;
+      }
+      .banana {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Elemento canvas para dibujar el juego -->
+    <canvas id="gameBoard" width="400" height="200"></canvas>
+
+    <!-- Información de puntos y vidas de cada jugador -->
+    <p>Jugador 1: <span id="player1Points">0</span> puntos, <span id="player1Lives">3</span> vidas</p>
+    <p>Jugador 2: <span id="player2Points">0</span> puntos, <span id="player2Lives">3</span> vidas</p>
+
+    <!-- Incluye el código JavaScript del juego -->
+<script src="gorrilla.js"></script>
+
+    <!-- Llamada a la función init() para inicializar el juego -->
+    <script>
+      init();
+    </script>
+  </body>
+</html>
